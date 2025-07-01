@@ -2,5 +2,7 @@
 <div id="demo"></div>
 
 <script>
-document.getElementById("demo").innerHTML = JSON.stringify(window);
+const keys = Object.keys(window);
+  document.getElementById("demo").innerHTML =
+    `<pre>${keys.join('\n')}</pre>`;
 </script>
